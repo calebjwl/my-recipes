@@ -1,0 +1,49 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 2px 5px rgba(#8b8b8b,.5);
+  background: $c-sidebar;
+  min-height: 100vh;
+  min-width: 15rem;
+}
+
+.form {
+  flex: 1;
+}
+
+.sidebar__heading {
+  padding: 0.5rem;
+  background: $c-sidebar-head;
+  font-size: 12px;
+  box-shadow: 2px 2px 5px rgba(#8b8b8b,.5);
+
+  &-title {
+    margin: 0;
+  }
+}
+
+.control {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+
+}
+
+.input__text {
+  padding: 0.5rem;
+  border: 0;
+  background: $c-sidebar-head;
+}
+
+.submit {
+  width: 100%;
+  padding: 0.8rem;
+  border: 0;
+  background: $c-submit;
+  color: $c-white;
+  font-size: 16px;
+  cursor: pointer;
+}

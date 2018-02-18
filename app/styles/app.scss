@@ -1,0 +1,30 @@
+// @import 'yoga';
+// @import 'normalize';
+
+// $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
+// @import 'font-awesome';
+
+$c-sidebar: #51b0f4;
+$c-sidebar-head: #e7f4fd;
+$c-submit: #74c278;
+$c-grid: #f0f0f0;
+$c-delete: #e64342;
+$c-white: #fefefe;
+
+$m-gutter: 1rem;
+
+@import 'reset';
+@import 'box-sizing';
+@import 'sidebar';
+@import 'grid';
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+.app {
+  display: flex;
+  background: $c-grid;
+  overflow: scroll;
+
+  &__main {
+    flex-grow: 1;
+  }
+}
