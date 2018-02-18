@@ -8,13 +8,13 @@ class ItemView {
     this.el = document.createElement('div');
     this.el.classList.add('grid__item');
     this.el.innerHTML = `
-    <div class="contact-card">
-      <h1 class="contact-card__name">
+    <div class="recipe-card">
+      <h1 class="recipe-card__name">
       </h1>
-      <p class="contact-card__street"></p>
-      <p className="contact-card__location">
-        <p class="contact-card__city"></p>
-        <p class="contact-card__state"></p>
+      <p class="recipe-card__street"></p>
+      <p className="recipe-card__location">
+        <p class="recipe-card__city"></p>
+        <p class="recipe-card__state"></p>
       </p>
 
       <button class="delete">Delete</button>
@@ -28,10 +28,10 @@ class ItemView {
   }
 
   render() {
-    this.el.querySelector('.contact-card__name').innerText = `${this.data.lastname}, ${this.data.firstname}`;
-    this.el.querySelector('.contact-card__street').innerText = this.data.street;
-    this.el.querySelector('.contact-card__city').innerText = `${this.data.city}, `;
-    this.el.querySelector('.contact-card__state').innerText = this.data.state;
+    this.el.querySelector('.recipe-card__name').innerText = `${this.data.lastname}, ${this.data.firstname}`;
+    this.el.querySelector('.recipe-card__street').innerText = this.data.street;
+    this.el.querySelector('.recipe-card__city').innerText = `${this.data.city}, `;
+    this.el.querySelector('.recipe-card__state').innerText = this.data.state;
   }
 }
 

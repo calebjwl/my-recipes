@@ -2,39 +2,44 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>MyContacts</title>
+  <title>MyRecipes</title>
   <link rel="stylesheet" href="/app.css">
 </head>
 <body>
   <div class="app">
     <form class="sidebar">
       <div class="sidebar__heading">
-        <h1 class="sidebar__heading-title">New Contact</h1>
+        <h1 class="sidebar__heading-title">Add Recipe</h1>
       </div>
       <div class="form">
         <div class="control">
-          <label class="label">First Name</label>
-          <input type="text" class="input__text contact-card__firstname">
+          <label class="label">Recipe Name</label>
+          <input type="text" class="input__text recipe-card__name">
         </div>
 
         <div class="control">
-          <label class="label">Last Name</label>
-          <input type="text" class="input__text contact-card__lastname">
+          <label class="label">Ingredients</label>
+          <textarea cols="30" rows="10" class="input__text recipe-card__ingredients"></textarea>
         </div>
 
         <div class="control">
-          <label class="label">Street</label>
-          <input type="text" class="input__text contact-card__street">
+          <label class="label">Directions</label>
+          <textarea cols="30" rows="10" class="input__text recipe-card__directions"></textarea>
         </div>
 
         <div class="control">
-          <label class="label">City</label>
-          <input type="text" class="input__text contact-card__city">
+          <label class="label">Prep Time</label>
+          <input type="text" class="input__text recipe-card__prep-time">
         </div>
 
         <div class="control">
-          <label class="label">State</label>
-          <input type="text" class="input__text contact-card__state">
+          <label class="label">Cook Time</label>
+          <input type="text" class="input__text recipe-card__cook-time">
+        </div>
+
+        <div class="control">
+          <label class="label">No. of Servings</label>
+          <input type="text" class="input__text recipe-card__servings">
         </div>
       </div>
 
@@ -49,31 +54,15 @@
         <div class="container">
           <div class="grid">
             <div class="grid__item">
-              <div class="contact-card">
-                <div class="contact-card__name">
-                  <h1 class="contact-card__lastname">Cera</h1>
-                  <h1 class="contact-card__firstname">Michael</h1>
+              <div class="recipe-card">
+                <div class="recipe-card__name">
+                  <h1 class="recipe-card__lastname">Cera</h1>
+                  <h1 class="recipe-card__firstname">Michael</h1>
                 </div>
-                <p class="contact-card__street">123 1st Ave S</p>
-                <div class="contact-card__location">
-                  <p class="contact-card__city">Nashville</p>
-                  <p class="contact-card__state">TN</p>
-                </div>
-
-                <button class="delete">Delete</button>
-              </div>
-            </div>
-
-            <div class="grid__item">
-              <div class="contact-card">
-                <div class="contact-card__name">
-                  <h1 class="contact-card__lastname">Cera</h1>
-                  <h1 class="contact-card__firstname">Michael</h1>
-                </div>
-                <p class="contact-card__street">123 1st Ave S</p>
-                <div class="contact-card__location">
-                  <p class="contact-card__city">Nashville</p>
-                  <p class="contact-card__state">TN</p>
+                <p class="recipe-card__street">123 1st Ave S</p>
+                <div class="recipe-card__location">
+                  <p class="recipe-card__city">Nashville</p>
+                  <p class="recipe-card__state">TN</p>
                 </div>
 
                 <button class="delete">Delete</button>
@@ -81,15 +70,15 @@
             </div>
 
             <div class="grid__item">
-              <div class="contact-card">
-                <div class="contact-card__name">
-                  <h1 class="contact-card__lastname">Cera</h1>
-                  <h1 class="contact-card__firstname">Michael</h1>
+              <div class="recipe-card">
+                <div class="recipe-card__name">
+                  <h1 class="recipe-card__lastname">Cera</h1>
+                  <h1 class="recipe-card__firstname">Michael</h1>
                 </div>
-                <p class="contact-card__street">123 1st Ave S</p>
-                <div class="contact-card__location">
-                  <p class="contact-card__city">Nashville</p>
-                  <p class="contact-card__state">TN</p>
+                <p class="recipe-card__street">123 1st Ave S</p>
+                <div class="recipe-card__location">
+                  <p class="recipe-card__city">Nashville</p>
+                  <p class="recipe-card__state">TN</p>
                 </div>
 
                 <button class="delete">Delete</button>
@@ -97,15 +86,31 @@
             </div>
 
             <div class="grid__item">
-              <div class="contact-card">
-                <div class="contact-card__name">
-                  <h1 class="contact-card__lastname">Cera</h1>
-                  <h1 class="contact-card__firstname">Michael</h1>
+              <div class="recipe-card">
+                <div class="recipe-card__name">
+                  <h1 class="recipe-card__lastname">Cera</h1>
+                  <h1 class="recipe-card__firstname">Michael</h1>
                 </div>
-                <p class="contact-card__street">123 1st Ave S</p>
-                <div class="contact-card__location">
-                  <p class="contact-card__city">Nashville</p>
-                  <p class="contact-card__state">TN</p>
+                <p class="recipe-card__street">123 1st Ave S</p>
+                <div class="recipe-card__location">
+                  <p class="recipe-card__city">Nashville</p>
+                  <p class="recipe-card__state">TN</p>
+                </div>
+
+                <button class="delete">Delete</button>
+              </div>
+            </div>
+
+            <div class="grid__item">
+              <div class="recipe-card">
+                <div class="recipe-card__name">
+                  <h1 class="recipe-card__lastname">Cera</h1>
+                  <h1 class="recipe-card__firstname">Michael</h1>
+                </div>
+                <p class="recipe-card__street">123 1st Ave S</p>
+                <div class="recipe-card__location">
+                  <p class="recipe-card__city">Nashville</p>
+                  <p class="recipe-card__state">TN</p>
                 </div>
 
                 <button class="delete">Delete</button>
