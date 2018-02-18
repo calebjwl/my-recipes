@@ -1,20 +1,20 @@
 export function findAll(data) {
   return {
-    type: 'CONTACT@FIND_ALL',
+    type: 'RECIPE@FIND_ALL',
     data,
   };
 }
 
-export function createContact(data) {
+export function createRecipe(data) {
   return {
-    type: 'CONTACT@CREATE',
+    type: 'RECIPE@CREATE',
     data: { ...data, id: new Date() }
   };
 }
 
-export function removeContact(id) {
+export function removeRecipe(id) {
   return {
-    type: 'CONTACT@REMOVE',
+    type: 'RECIPE@REMOVE',
     id,
   };
 }

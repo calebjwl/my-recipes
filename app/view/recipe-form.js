@@ -1,6 +1,6 @@
-import { createContact } from '../actions';
+import { createRecipe } from '../actions';
 
-export default class ContactFormView {
+export default class RecipeFormView {
   constructor(el, store) {
     this.el = el;
     this.store = store;
@@ -19,7 +19,7 @@ export default class ContactFormView {
         servings: this.el.querySelector('.recipe-card__servings').value,
       };
 
-      this.store.dispatch(createContact(data));
+      this.store.dispatch(createRecipe(data));
 
       this.el.querySelector('.recipe-card__name').value = '';
       this.el.querySelector('.recipe-card__ingredients').value = '';

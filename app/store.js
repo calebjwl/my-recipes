@@ -4,7 +4,7 @@ import thunk from 'redux-thunk';
 import reducer from './reducer';
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
-const initialState = { contacts: [] };
+const initialState = { recipes: [] };
 
 const store = createStore(
   reducer,

@@ -1,5 +1,5 @@
-import ContactFormView from '../view/contact-form';
-import ContactListView from '../view/contact-list';
+import RecipeFormView from '../view/recipe-form';
+import RecipeListView from '../view/recipe-list';
 // import { findAll } from '../actions';
 
 export default class AppController {
@@ -7,20 +7,20 @@ export default class AppController {
     this.el = el;
     this.store = store;
 
-    this.ContactFormView = new ContactFormView(this.el.querySelector('.sidebar'), this.store);
-    this.ContactListView = new ContactListView(this.el.querySelector('.grid'), this.store);
+    this.RecipeFormView = new RecipeFormView(this.el.querySelector('.sidebar'), this.store);
+    this.RecipeListView = new RecipeListView(this.el.querySelector('.grid'), this.store);
   }
 
   created() {
     this.store.subscribe(() => {
-      const contacts = this.store.getState().contacts;
-      window.localStorage.contacts = JSON.stringify(contacts);
+      const recipes = this.store.getState().recipes;
+      window.localStorage.recipes = JSON.stringify(recipes);
     });
 
-    this.ContactFormView.mounted();
-    this.ContactListView.mounted();
+    this.RecipeFormView.mounted();
+    this.RecipeListView.mounted();
 
-    const dataString = window.localStorage.contacts || '[]';
+    const dataString = window.localStorage.recipes || '[]';
 
     this.store.dispatch({ type: 'CONTACT@FIND_ALL', data: JSON.parse(dataString) });
   }

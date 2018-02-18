@@ -1,5 +1,5 @@
 {
-  "name": "15-contact-manager",
+  "name": "15-recipe-manager",
   "version": "1.0.0",
   "description": "",
   "main": "public/index.html",
@@ -9,7 +9,7 @@
     "build": "ember build",
     "lint": "sass-lint",
     "esfix": "eslint src --fix && eslint tests --fix",
-    "deploy": "ember build -e production && cp dist/index.html dist/200.html && surge dist my-contacts.surge.sh",
+    "deploy": "ember build -e production && cp dist/index.html dist/200.html && surge dist my-recipes.surge.sh",
     "setup:vue": "yarn add vue vue-router && yarn add --dev rollup-plugin-vue eslint-plugin-html"
   },
   "author": "",

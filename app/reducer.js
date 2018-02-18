@@ -1,12 +1,12 @@
 export default function reducer(state, action) {
   switch (action.type) {
-    case 'CONTACT@CREATE':
-      return { contacts: [action.data, ...state.contacts] };
-    case 'CONTACT@FIND_ALL':
-      return { contacts: action.data };
-    case 'CONTACT@REMOVE':
-      return { contacts: state.contacts.filter(contact => contact.id !== action.id) };
+    case 'RECIPE@CREATE':
+      return { recipes: [action.data, ...state.recipes] };
+    case 'RECIPE@FIND_ALL':
+      return { recipes: action.data };
+    case 'RECIPE@REMOVE':
+      return { recipes: state.recipes.filter(recipe => recipe.id !== action.id) };
     default:
-      return state || { contacts: [] };
+      return state || { recipes: [] };
   }
 }
