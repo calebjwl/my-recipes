@@ -15,8 +15,13 @@ class ItemView {
       <p class="recipe-card__prep-time"></p>
       <p class="recipe-card__cook-time"></p>
       <p class="recipe-card__servings"></p>
-
-      <button class="delete">Delete</button>
+      
+      <button class="recipe-card__button edit">
+        <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+      </button>
+      <button class="recipe-card__button delete">
+        <i class="fa fa-trash" aria-hidden="true"></i>
+      </button>
     </div>`;
   }
 

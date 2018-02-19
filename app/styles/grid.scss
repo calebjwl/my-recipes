@@ -27,45 +27,35 @@
 
 .recipe-card {
   padding: $m-gutter;
-  border: rgba(#878787,.55) 0.1rem solid;
-  border-radius: 0.2rem;
+  border-radius: 4px;
   background: $c-white;
 
-  &__name {
-    display: flex;
-    margin: 0;
+  &__button {
+    width: 3rem;
+    margin: 0 auto;
+    border-radius: 4px;
+    padding: 0.7rem;
+    font-size: 15px;
+    cursor: pointer;
   }
-
-  &__lastname {
-    margin: 0;
-  }
-
-  &__firstname {
-    margin: 0;
-  }
-
-  &__location {
-    display: flex;
-  }
-
-  // &__city {
-  //   margin: 0;
-  // }
-  //
-  // &__state {
-  //   margin: 0;
-  // }
 }
 
 .delete {
-  display: block;
-  width: calc(100% + 2rem);
-  margin: -1rem;
-  margin-top: 0.5rem;
-  padding: 1rem;
-  border: 0;
-  background: $c-delete;
-  color: $c-white;
-  font-size: 15px;
-  cursor: pointer;
+  border: 1px solid $c-delete;
+  color: $c-delete;
+
+  &:hover {
+    background: $c-delete;
+    color: $c-white;
+  }
+}
+
+.edit {
+  border: 1px solid $c-edit;
+  color: $c-edit;
+
+  &:hover {
+    background: $c-edit;
+    color: $c-white;
+  }
 }
