@@ -1,13 +1,10 @@
-// @import 'yoga';
-// @import 'normalize';
-
 // $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 // @import 'font-awesome';
 
 $c-sidebar: #51b0f4;
-$c-sidebar-head: #e7f4fd;
-$c-submit: #74c278;
-$c-grid: #f0f0f0;
+$c-sidebar-head: #f0f7fc;
+$c-submit: #4ae652;
+$c-grid: #f4f8fa;
 $c-delete: #e64342;
 $c-white: #fefefe;
 
@@ -18,6 +15,7 @@ $m-gutter: 1rem;
 @import 'sidebar';
 @import 'grid';
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
 
 .app {
   display: flex;
