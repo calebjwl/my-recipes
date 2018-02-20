@@ -23,4 +23,4 @@ export default class AppController {
 
     this.store.dispatch({ type: 'CONTACT@FIND_ALL', data: JSON.parse(dataString) });
   }
-}
+};

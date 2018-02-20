@@ -7,6 +7,16 @@ export default class RecipeFormView {
     this.store = store;
   }
 
+  clearForm() {
+    console.log('working');
+    this.el.querySelector('.recipe-card__name').value = '';
+    this.el.querySelector('.recipe-card__ingredients').value = '';
+    this.el.querySelector('.recipe-card__directions').value = '';
+    this.el.querySelector('.recipe-card__prepTime').value = '';
+    this.el.querySelector('.recipe-card__cookTime').value = '';
+    this.el.querySelector('.recipe-card__servings').value = '';
+  }
+
   mounted() {
     this.el.addEventListener('submit', (ev) => {
       const isValidated = validateForm();

@@ -8,7 +8,7 @@
 </head>
 <body>
   <div class="app">
-    <form class="sidebar" name="newRecipeForm" onsubmit="return validateForm()">
+    <form class="sidebar" name="newRecipeForm">
       <div class="sidebar__heading">
         <h1 class="sidebar__heading-title">Add Recipe</h1>
       </div>
@@ -61,7 +61,10 @@
         </div>
       </div>
 
-      <button class="submit button">Submit</button>
+      <div class="button-bar">
+        <input type="reset" value="Clear" class="warning button"></input>
+        <input type="submit" value="Submit" class="submit button"></input>
+      </div>
     </form>
 
     <div class="app__main">

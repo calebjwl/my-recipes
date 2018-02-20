@@ -39,7 +39,6 @@
 }
 
 .submit {
-  margin-bottom: 1rem;
   border: 1px solid $c-submit;
   color: $c-submit;
 
@@ -50,11 +49,29 @@
   }
 }
 
+.warning {
+  text-align: center;
+  border: 1px solid $c-warning;
+  color: $c-warning;
+
+  &:hover {
+    background: $c-warning;
+    color: $c-white;
+    transition: 0.5s;
+  }
+}
+
 .button {
   text-transform: uppercase;
   width: 50%;
+  margin: .5rem;
   padding: 0.6rem;
   border-radius: 50px;
   font-size: 16px;
   cursor: pointer;
+
+  &-bar {
+    display: flex;
+    width: 100%;
+  }
 }
