@@ -6,8 +6,7 @@ export default function validateForm() {
             const convertedText = fieldName.charAt(0).toUpperCase() + fieldName.slice(1);
             alert(convertedText + " can not be empty");
             return false;
-        } else {
-            return true;
-        }
+        } 
     }
+    return true;
 }
