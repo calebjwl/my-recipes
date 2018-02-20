@@ -35,9 +35,9 @@ class ItemView {
     this.el.querySelector('.recipe-card__name').innerText = this.data.name;
     this.el.querySelector('.recipe-card__ingredients').innerText = this.data.ingredients;
     this.el.querySelector('.recipe-card__directions').innerText = this.data.directions;
-    this.el.querySelector('.recipe-card__prepTime').innerText = this.data.prepTime;
-    this.el.querySelector('.recipe-card__cookTime').innerText = this.data.cookTime;
-    this.el.querySelector('.recipe-card__servings').innerText = this.data.servings;
+    this.el.querySelector('.recipe-card__prepTime').innerText = `Prep time: ${this.data.prepTime}`;
+    this.el.querySelector('.recipe-card__cookTime').innerText = `Cook time: ${this.data.cookTime}`;
+    this.el.querySelector('.recipe-card__servings').innerText = `Servings: ${this.data.servings}`;
   }
 }
 
