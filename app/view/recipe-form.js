@@ -20,8 +20,8 @@ export default class RecipeFormView {
 
     this.el.addEventListener('submit', (ev) => {
       ev.preventDefault();
-      // const isValidated = validateForm();
-      // if(isValidated) {
+      const isValidated = validateForm();
+      if(isValidated) {
         const data = {
           name: this.el.querySelector('.recipe-card__name').value,
           ingredients: this.el.querySelector('.recipe-card__ingredients').value,
@@ -39,7 +39,7 @@ export default class RecipeFormView {
         this.el.querySelector('.recipe-card__prepTime').value = '';
         this.el.querySelector('.recipe-card__cookTime').value = '';
         this.el.querySelector('.recipe-card__servings').value = '';
-      // }
+      }
     });
   }
 }

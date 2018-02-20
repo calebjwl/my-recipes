@@ -16,6 +16,8 @@
 .grid {
   display: flex;
   flex-wrap: wrap;
+  height: 80vh;
+  overflow: scroll;
 
   &__item {
     flex-grow: 1;
