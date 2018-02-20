@@ -1,4 +1,4 @@
-$c-sidebar: #51b0f4;
+$c-blue: #51b0f4;
 $c-sidebar-head: #f0f7fc;
 $c-grid: #f4f8fa;
 $c-submit: #4ae652;
@@ -10,6 +10,7 @@ $c-white: #fefefe;
 $c-grey: #bfbfbf;
 
 $m-gutter: 1rem;
+$t-transition: 0.3s;
 
 @import 'reset';
 @import 'box-sizing';

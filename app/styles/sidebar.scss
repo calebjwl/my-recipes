@@ -1,10 +1,8 @@
 .sidebar {
   display: flex;
   flex-direction: column;
-  align-items: center;
   box-shadow: 0 20px 50px rgba(50,50,93,.05), 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.1);
   background: $c-white;
-  min-height: 100vh;
   min-width: 20rem;
   font-size: 14px;
 }
@@ -14,7 +12,10 @@
 }
 
 .sidebar__heading {
-  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
   
   &-title {
     font-size: 20px;
@@ -45,33 +46,47 @@
   &:hover {
     background: $c-submit;
     color: $c-white;
-    transition: 0.5s;
+    transition: $t-transition;
   }
 }
 
 .warning {
-  text-align: center;
   border: 1px solid $c-warning;
   color: $c-warning;
 
   &:hover {
     background: $c-warning;
     color: $c-white;
-    transition: 0.5s;
+    transition: $t-transition;
   }
 }
 
 .button {
+  text-align: center;
   text-transform: uppercase;
   width: 50%;
   margin: .5rem;
   padding: 0.6rem;
   border-radius: 50px;
-  font-size: 16px;
+  font-size: 15px;
   cursor: pointer;
 
   &-bar {
     display: flex;
     width: 100%;
+  }
+
+  &-sample {
+    border: 1px solid $c-blue;
+    border-radius: 5px;
+    padding: 0.3rem;
+    color: $c-blue;
+    cursor: pointer;
+
+    &:hover {
+      background: $c-blue;
+      color: $c-white;
+      transition: $t-transition;
+    }
   }
 }

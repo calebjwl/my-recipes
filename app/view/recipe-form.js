@@ -9,11 +9,9 @@ export default class RecipeFormView {
 
   mounted() {
     this.el.addEventListener('submit', (ev) => {
+      ev.preventDefault();
       const isValidated = validateForm();
       if(isValidated) {
-        ev.preventDefault();
-  
-  
         const data = {
           name: this.el.querySelector('.recipe-card__name').value,
           ingredients: this.el.querySelector('.recipe-card__ingredients').value,
