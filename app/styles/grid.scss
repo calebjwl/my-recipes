@@ -40,6 +40,10 @@
     font-size: 15px;
     cursor: pointer;
   }
+
+  &__details {
+    display: flex;
+  }
 }
 
 .delete {

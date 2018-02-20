@@ -10,11 +10,15 @@ class ItemView {
     this.el.innerHTML = `
     <div class="recipe-card">
       <h1 class="recipe-card__name"></h1>
+      <div style="display: flex">
+        <p class="recipe-card__prepTime" style="margin-right: 1rem"></p>
+        <p class="recipe-card__cookTime" style="margin-right: 1rem"></p>
+        <p class="recipe-card__servings" style="margin-right: 1rem"></p>
+      </div>
+      <h4>Ingredients:</h4>
       <p class="recipe-card__ingredients"></p>
+      <h4>Directions:</h4>
       <p class="recipe-card__directions"></p>
-      <p class="recipe-card__prepTime"></p>
-      <p class="recipe-card__cookTime"></p>
-      <p class="recipe-card__servings"></p>
       
       <button class="recipe-card__button edit">
         <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
@@ -35,9 +39,9 @@ class ItemView {
     this.el.querySelector('.recipe-card__name').innerText = this.data.name;
     this.el.querySelector('.recipe-card__ingredients').innerText = this.data.ingredients;
     this.el.querySelector('.recipe-card__directions').innerText = this.data.directions;
-    this.el.querySelector('.recipe-card__prepTime').innerText = `Prep time: ${this.data.prepTime}`;
-    this.el.querySelector('.recipe-card__cookTime').innerText = `Cook time: ${this.data.cookTime}`;
-    this.el.querySelector('.recipe-card__servings').innerText = `Servings: ${this.data.servings}`;
+    this.el.querySelector('.recipe-card__prepTime').innerText = `Prep time: ${this.data.prepTime} minutes`;
+    this.el.querySelector('.recipe-card__cookTime').innerText = `Cook time: ${this.data.cookTime} minutes`;
+    this.el.querySelector('.recipe-card__servings').innerText = `${this.data.servings} servings`;
   }
 }
 
