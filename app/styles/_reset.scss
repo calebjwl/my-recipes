@@ -12,3 +12,13 @@ ul {
 img {
   max-width: 100;
 }
+
+input::placeholder { 
+  font-style: italic;
+  color: $c-grey;
+}
+
+textarea::placeholder {
+  font-style: italic;
+  color: $c-grey;
+}

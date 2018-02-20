@@ -1,4 +1,5 @@
 import { createRecipe } from '../actions';
+import validateForm from '../validations';
 
 export default class RecipeFormView {
   constructor(el, store) {
@@ -8,25 +9,31 @@ export default class RecipeFormView {
 
   mounted() {
     this.el.addEventListener('submit', (ev) => {
-      ev.preventDefault();
-
-      const data = {
-        name: this.el.querySelector('.recipe-card__name').value,
-        ingredients: this.el.querySelector('.recipe-card__ingredients').value,
-        directions: this.el.querySelector('.recipe-card__directions').value,
-        prepTime: this.el.querySelector('.recipe-card__prep-time').value,
-        cookTime: this.el.querySelector('.recipe-card__cook-time').value,
-        servings: this.el.querySelector('.recipe-card__servings').value,
-      };
-
-      this.store.dispatch(createRecipe(data));
-
-      this.el.querySelector('.recipe-card__name').value = '';
-      this.el.querySelector('.recipe-card__ingredients').value = '';
-      this.el.querySelector('.recipe-card__directions').value = '';
-      this.el.querySelector('.recipe-card__prep-time').value = '';
-      this.el.querySelector('.recipe-card__cook-time').value = '';
-      this.el.querySelector('.recipe-card__servings').value = '';
+      const isValidated = validateForm();
+      if(isValidated) {
+        ev.preventDefault();
+  
+  
+        const data = {
+          name: this.el.querySelector('.recipe-card__name').value,
+          ingredients: this.el.querySelector('.recipe-card__ingredients').value,
+          directions: this.el.querySelector('.recipe-card__directions').value,
+          prepTime: this.el.querySelector('.recipe-card__prep-time').value,
+          cookTime: this.el.querySelector('.recipe-card__cook-time').value,
+          servings: this.el.querySelector('.recipe-card__servings').value,
+        };
+  
+        this.store.dispatch(createRecipe(data));
+  
+        this.el.querySelector('.recipe-card__name').value = '';
+        this.el.querySelector('.recipe-card__ingredients').value = '';
+        this.el.querySelector('.recipe-card__directions').value = '';
+        this.el.querySelector('.recipe-card__prep-time').value = '';
+        this.el.querySelector('.recipe-card__cook-time').value = '';
+        this.el.querySelector('.recipe-card__servings').value = '';
+      } else {
+        return;
+      }
     });
   }
 }

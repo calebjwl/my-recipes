@@ -12,6 +12,13 @@ export function createRecipe(data) {
   };
 }
 
+// export function editRecipe(data) {
+//   return {
+//     type: 'RECIPE@EDIT',
+//     data: { ...data, id: new Date() }
+//   };
+// }
+
 export function removeRecipe(id) {
   return {
     type: 'RECIPE@REMOVE',

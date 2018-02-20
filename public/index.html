@@ -8,39 +8,51 @@
 </head>
 <body>
   <div class="app">
-    <form class="sidebar">
+    <form class="sidebar" name="newRecipeForm" onsubmit="return validateForm()">
       <div class="sidebar__heading">
         <h1 class="sidebar__heading-title">Add Recipe</h1>
       </div>
       <div class="form">
         <div class="control">
           <label class="label">Recipe Name</label>
-          <input type="text" class="input__text recipe-card__name">
+          <input type="text" 
+              class="input__text recipe-card__name" 
+              name="name" 
+              placeholder="Ex: Baked Teriyaki Chicken">
         </div>
 
         <div class="control">
           <label class="label">Ingredients</label>
-          <textarea cols="30" rows="7" class="input__text recipe-card__ingredients"></textarea>
+          <textarea cols="30" 
+              rows="7" 
+              class="input__text recipe-card__ingredients"
+              placeholder="Ex: 1 tbsp cornstarch, 1 tbsp cold water, 1/2 cup white sugar, 1/2 cup soy sauce, etc..."></textarea>
         </div>
 
         <div class="control">
           <label class="label">Directions</label>
-          <textarea cols="30" rows="7" class="input__text recipe-card__directions"></textarea>
+          <textarea cols="30" 
+              rows="7" 
+              class="input__text recipe-card__directions"
+              placeholder="Ex: In a small saucepan over low heat, combine the cornstarch, cold water, sugar, soy sauce, vinegar, garlic, ginger and ground black pepper. Let simmer, stirring frequently, until sauce thickens and bubbles."></textarea>
         </div>
 
         <div class="control">
-          <label class="label">Prep Time</label>
-          <input type="text" class="input__text recipe-card__prep-time">
+          <label class="label">Prep Time (minutes)</label>
+          <input type="number" class="input__text recipe-card__prep-time"
+          placeholder="Ex: 30">
         </div>
 
         <div class="control">
-          <label class="label">Cook Time</label>
-          <input type="text" class="input__text recipe-card__cook-time">
+          <label class="label">Cook Time (minutes)</label>
+          <input type="number" class="input__text recipe-card__cook-time"
+          placeholder="Ex: 60">
         </div>
 
         <div class="control">
           <label class="label">No. of Servings</label>
-          <input type="text" class="input__text recipe-card__servings">
+          <input type="number" class="input__text recipe-card__servings"
+          placeholder="Ex: 6">
         </div>
       </div>
 

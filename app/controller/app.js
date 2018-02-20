@@ -1,6 +1,5 @@
 import RecipeFormView from '../view/recipe-form';
 import RecipeListView from '../view/recipe-list';
-// import { findAll } from '../actions';
 
 export default class AppController {
   constructor(el, store) {
