@@ -32,17 +32,29 @@
   border-radius: 4px;
   background: $c-white;
 
+  &__name {
+    margin: 0;
+  }
+
+  &__list {
+    display: flex;
+
+    &-item {
+      margin-right: 1rem;
+    }
+  }
+
+  &__subtitle {
+    margin: 1rem 0 0 0;
+  }
+
   &__button {
     width: 3rem;
     margin: 0 auto;
-    border-radius: 4px;
     padding: 0.7rem;
+    border-radius: 4px;
     font-size: 15px;
     cursor: pointer;
-  }
-
-  &__details {
-    display: flex;
   }
 }
 

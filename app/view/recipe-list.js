@@ -9,15 +9,16 @@ class ItemView {
     this.el.classList.add('grid__item');
     this.el.innerHTML = `
     <div class="recipe-card">
+      <img src="" class="recipe-card__image" id="image">
       <h1 class="recipe-card__name" id="name"></h1>
-      <div style="display: flex">
-        <p class="recipe-card__prepTime" id="prepTime" style="margin-right: 1rem"></p>
-        <p class="recipe-card__cookTime" id="cookTime" style="margin-right: 1rem"></p>
-        <p class="recipe-card__servings" id="servings" style="margin-right: 1rem"></p>
+      <div class="recipe-card__list">
+        <p class="recipe-card__list-item" id="prepTime"></p>
+        <p class="recipe-card__list-item" id="cookTime"></p>
+        <p class="recipe-card__list-item" id="servings"></p>
       </div>
-      <h4>Ingredients:</h4>
+      <h2 class="recipe-card__subtitle">Ingredients:</h2>
       <p class="recipe-card__ingredients" id="ingredients"></p>
-      <h4>Directions:</h4>
+      <h2 class="recipe-card__subtitle">Directions:</h2>
       <p class="recipe-card__directions" id="directions"></p>
       
       <button class="recipe-card__button edit">
@@ -36,6 +37,7 @@ class ItemView {
   }
 
   render() {
+    this.el.querySelector('#image').src = this.data.image;
     this.el.querySelector('#name').innerText = this.data.name;
     this.el.querySelector('#ingredients').innerText = this.data.ingredients;
     this.el.querySelector('#directions').innerText = this.data.directions;
