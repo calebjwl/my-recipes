@@ -1,10 +1,10 @@
 .sidebar {
   display: flex;
   flex-direction: column;
-  box-shadow: 0 20px 50px rgba(50,50,93,.05), 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.1);
-  background: $c-white;
   min-width: 20rem;
+  background: $c-white;
   font-size: 14px;
+  box-shadow: 0 20px 50px rgba(50,50,93,.05), 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.1);
 }
 
 .form {
@@ -16,21 +16,16 @@
   align-items: center;
   justify-content: space-between;
   padding: 0.5rem 1rem;
-  
   &-title {
-    font-size: 20px;
     margin: 0;
+    font-size: 20px;
   }
 }
 
 .control {
-  margin: 1rem;
   display: flex;
   flex-direction: column;
-}
-
-.label {
-
+  margin: 1rem;
 }
 
 .input__text {
@@ -44,9 +39,9 @@
   color: $c-submit;
 
   &:hover {
+    transition: $t-transition;
     background: $c-submit;
     color: $c-white;
-    transition: $t-transition;
   }
 }
 
@@ -55,20 +50,20 @@
   color: $c-warning;
 
   &:hover {
+    transition: $t-transition;
     background: $c-warning;
     color: $c-white;
-    transition: $t-transition;
   }
 }
 
 .button {
-  text-align: center;
-  text-transform: uppercase;
   width: 50%;
   margin: .5rem;
   padding: 0.6rem;
   border-radius: 50px;
   font-size: 15px;
+  text-align: center;
+  text-transform: uppercase;
   cursor: pointer;
 
   &-bar {
@@ -77,16 +72,16 @@
   }
 
   &-sample {
+    padding: 0.3rem;
     border: 1px solid $c-blue;
     border-radius: 5px;
-    padding: 0.3rem;
     color: $c-blue;
     cursor: pointer;
 
     &:hover {
+      transition: $t-transition;
       background: $c-blue;
       color: $c-white;
-      transition: $t-transition;
     }
   }
 }

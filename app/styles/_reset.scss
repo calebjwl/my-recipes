@@ -1,7 +1,7 @@
 body {
   margin: 0;
-  font-family: 'Quicksand';
   background: $c-grid;
+  font-family: 'Quicksand', sans-serif;
 }
 
 ul {
@@ -13,12 +13,12 @@ img {
   max-width: 100;
 }
 
-input::placeholder { 
-  font-style: italic;
+input::placeholder {
   color: $c-grey;
+  font-style: italic;
 }
 
 textarea::placeholder {
-  font-style: italic;
   color: $c-grey;
+  font-style: italic;
 }
