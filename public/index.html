@@ -17,7 +17,8 @@
         <div class="control">
           <label class="label">Recipe Name</label>
           <input type="text" 
-              class="input__text recipe-card__name" 
+              class="input__text"
+              id="name" 
               name="name" 
               placeholder="Ex: Honey Garlic Salmon">
         </div>
@@ -26,7 +27,8 @@
           <label class="label">Ingredients</label>
           <textarea cols="30" 
               rows="7" 
-              class="input__text recipe-card__ingredients"
+              class="input__text"
+              id="ingredients"
               name="ingredients"
               placeholder="Ex: 4 tbsp honey, 2 tbsp soy sauce (all purpose or light soy sauce), 1 tbsp white vinegar (or sub with any other vinegar except balsamic), 1 large garlic clove (or 2 small), minced"></textarea>
         </div>
@@ -35,28 +37,32 @@
           <label class="label">Directions</label>
           <textarea cols="30" 
               rows="7" 
-              class="input__text recipe-card__directions"
+              class="input__text"
+              id="directions"
                name="directions"
               placeholder="Ex: Take salmon out of the fridge 20 minutes before cooking. Pat salmon skin dry with a paper towel and sprinkle with salt and pepper."></textarea>
         </div>
 
         <div class="control">
           <label class="label">Prep Time (minutes)</label>
-          <input type="number" class="input__text recipe-card__prepTime"
+          <input type="number" class="input__text"
+          id="prepTime"
           name="prepTime"
           placeholder="Ex: 5">
         </div>
 
         <div class="control">
           <label class="label">Cook Time (minutes)</label>
-          <input type="number" class="input__text recipe-card__cookTime"
+          <input type="number" class="input__text"
+          id="cookTime"
           name="cookTime"
           placeholder="Ex: 10">
         </div>
 
         <div class="control">
           <label class="label">No. of Servings</label>
-          <input type="number" class="input__text recipe-card__servings"
+          <input type="number" class="input__text"
+          id="servings"
           name="servings"
           placeholder="Ex: 2">
         </div>
