@@ -12,8 +12,10 @@ class ItemView {
       <img src="" class="recipe-card__image" id="image">
       <h1 class="recipe-card__name" id="name"></h1>
       <div class="recipe-card__list">
+        <i class="far fa-clock icon"></i>
         <p class="recipe-card__list-item" id="prepTime"></p>
         <p class="recipe-card__list-item" id="cookTime"></p>
+        <i class="fas fa-chart-pie icon"></i>
         <p class="recipe-card__list-item" id="servings"></p>
       </div>
       <h2 class="recipe-card__subtitle">Ingredients:</h2>

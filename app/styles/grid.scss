@@ -5,7 +5,6 @@
 .title {
   display: flex;
   justify-content: center;
-  font-size: 1.5rem;
 
   &__text {
     margin: 0;
@@ -20,16 +19,22 @@
   overflow: scroll;
 
   &__item {
-    width: calc(100% / 2) - 2rem;
+    width: calc(100% / 2 - 2rem);
     min-width: 10rem;
     margin: 1rem;
   }
+}
+
+.icon {
+  margin-right: 0.2rem;
+  color: $c-grey;
 }
 
 .recipe-card {
   padding: $m-gutter;
   border-radius: 4px;
   background: $c-white;
+  font-size: $f-small;
 
   &__image {
     width: 100%;
@@ -41,9 +46,12 @@
 
   &__list {
     display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
 
     &-item {
-      margin-right: 1rem;
+      margin: 0;
+      margin-right: 0.5rem;
     }
   }
 
