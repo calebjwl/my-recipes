@@ -13,7 +13,6 @@ class ItemView {
       <h1 class="recipe-card__name" id="name"></h1>
       <div class="recipe-card__list">
         <i class="far fa-clock icon"></i>
-        <p class="recipe-card__list-item" id="prepTime"></p>
         <p class="recipe-card__list-item" id="cookTime"></p>
         <i class="fas fa-chart-pie icon"></i>
         <p class="recipe-card__list-item" id="servings"></p>
@@ -43,8 +42,7 @@ class ItemView {
     this.el.querySelector('#name').innerText = this.data.name;
     this.el.querySelector('#ingredients').innerText = this.data.ingredients;
     this.el.querySelector('#directions').innerText = this.data.directions;
-    this.el.querySelector('#prepTime').innerText = `Prep time: ${this.data.prepTime} minutes`;
-    this.el.querySelector('#cookTime').innerText = `Cook time: ${this.data.cookTime} minutes`;
+    this.el.querySelector('#cookTime').innerText = `${this.data.cookTime} minutes`;
     this.el.querySelector('#servings').innerText = `${this.data.servings} servings`;
   }
 }
